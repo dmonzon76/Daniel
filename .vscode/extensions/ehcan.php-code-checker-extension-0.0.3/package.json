@@ -1,0 +1,56 @@
+{
+	"name": "php-code-checker-extension",
+	"icon": "icon.png",
+	"displayName": "PHP Code Checker Extension",
+	"description": "A simple API call to https://phpcodechecker.com/ for check your php code",
+	"version": "0.0.3",
+	"publisher": "Ehcan",
+	"homepage": "https://ehcan.ir",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"categories": [
+		"Linters",
+		"Language Packs"
+	],
+	"activationEvents": [
+		"onCommand:extension.php-code-checker"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.php-code-checker",
+				"title": "php-code-checker"
+			}
+		]
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.40.0",
+		"eslint": "^6.6.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"vscode-test": "^1.2.2"
+	},
+	"dependencies": {
+		"request": "^2.88.0"
+	},
+	"__metadata": {
+		"id": "28383e52-bfcc-4b85-8c0b-35481409b2bc",
+		"publisherId": "93891227-ab6b-4a92-aba2-34ae1a3e21cc",
+		"publisherDisplayName": "Ehcan",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1690232743402,
+		"preRelease": false,
+		"size": 3679814
+	}
+}
